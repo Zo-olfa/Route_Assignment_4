@@ -121,7 +121,7 @@ app.post(
       });
     }
     const newUser = {
-      id: usersList.length + 1,
+      id: usersList[usersList.length - 1]?.id + 1 || 1,
       name,
       age,
       email,
